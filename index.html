@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="main_section">
+      <div class="header_section">
+        <h1>Registration Form</h1>
+      </div>
+      <br /><br />
+      <div class="input_section">
+        <form onsubmit="myForm()">
+          <input
+            required
+            type="text"
+            placeholder="First Name"
+            id="firstNameInputBox"
+            class="firstNameStyle"
+          /><br /><br />
+          <input
+            required
+            type="text"
+            placeholder="Last Name"
+            id="lastNameInputBox"
+            class="lastNameStyle"
+          /><br /><br />
+          <input
+            required
+            type="email"
+            placeholder="E-mail"
+            id="emailInputBox"
+            class="emailStyle"
+          /><br /><br />
+          <input
+            required
+            type="number"
+            placeholder="Number"
+            id="numberInputBox"
+            class="numberStyle"
+          /><br /><br />
+          <input
+            required
+            type="password"
+            placeholder="Password"
+            id="PasswordInputBox"
+            class="passwordStyle"
+          /><br /><br />
+          <input
+            required
+            type="password"
+            placeholder="Confirm Password"
+            id="confirmPasswordInputBox"
+            class="passwordStyle2"
+          /><br /><br />
+          
+          <div class="genderSelection">
+            <p>Gender : </p>
+            <label for="male"
+              ><input
+                name="gender"
+                type="radio"
+                value="male"
+                id="male"
+              /> Male</label
+            >
+            <label for="female"
+              ><input
+                name="gender"
+                type="radio"
+                value="female"
+                id="female"
+              /> Female</label
+            >
+          </div>
+          <br />
+          <label class="textStyle"  for="dateOfBirth"
+            ><p>Date of Birth</p>
+            <input type="date" id="dateOfBirth" /></label
+          ><br /><br />
+
+
+          <!-- For Home Distric And Other Information -->
+          <label class="textStyle" for="adress"
+            ><p>Present Adress</p> <br />
+            <input type="text" id="presentAdress" placeholder="Present Adress" /></label
+          ><br /><br />
+          <label class="textStyle" for="adress"
+            ><p>Parmanent Adress</p> <br />
+            <input type="text" id="parmanentAdress" placeholder="Parmanent Adress" /></label
+          ><br /><br />
+          <label class="textStyle" for="selectDivison"><p>Select Your Divison</p></label><br />
+          <select name="seletingDivison" id="selectDivison">
+            <option value="dhaka">Dhaka</option>
+            <option value="chittagong">Chittagong</option>
+            <option value="barishal">Barisal</option>
+            <option value="rajshahi">Rajshahi</option>
+            <option value="khulna">Khulna</option>
+            <option value="sylhet">Sylhet</option>
+            <option value="rangpur">Rangpur</option>
+            <option value="mymensingh">Mymensingh</option></select
+          ><br /><br />
+          <label class="textStyle" for="selectDistric"><p>Select Your Distric</p></label><br />
+          <select name="seletingDistric" id="selectDistric">
+            <optgroup label="Dhaka Divison">
+              <option value="dhaka_distric">Dhaka</option>
+              <option value="faridpur_distric">Faridpur</option>
+              <option value="gazipur_distric">Gazipur</option>
+              <option value="gopalganj_distric">Gopalganj</option>
+              <option value="kishoreganj_distric">Kishoreganj</option>
+              <option value="madaripur_distric">Madaripur</option>
+              <option value="manikganj_distric">Manikganj</option>
+              <option value="narayanganj_distric">Narayanganj</option>
+              <option value="narsingdi_distric">Narsingdi</option>
+              <option value="rajbari_distric">Rajbari</option>
+              <option value="shariatpur_distric">Shariatpur</option>
+              <option value="tangail_distric">Tangail</option>
+            </optgroup>
+            <optgroup label="Rajshahi Divison ">
+              <option value="rajshahi_distric">Rajshahi</option>
+              <option value="pabna_distric">Pabna</option>
+              <option value="bogra_distric">Bogra</option>
+              <option value="nawabganj_distric">Nawabganj</option>
+              <option value="natore_distric">Natore</option>
+              <option value="naogaon_distric">Naogaon</option>
+              <option value="joypurhat_distric">Joypurhat</option>
+              <option value="sirajganj_distric">Sirajganj</option>
+            </optgroup>
+            <optgroup label="Rangpur Divison ">
+              <option value="rangpur_distric">Rangpur</option>
+              <option value="kurigram_distric">Kurigram</option>
+              <option value="gaibandha_distric">Gaibandha</option>
+              <option value="thakurgaon_distric">Thakurgaon</option>
+              <option value="dinajpur_distric">Dinajpur</option>
+              <option value="nilphamari_distric">Nilphamari</option>
+              <option value="panchagarh_distric">Panchagarh</option>
+              <option value="lalmonirhat_distric">Lalmonirhat</option>
+            </optgroup>
+            <optgroup label="Khulna Divison ">
+              <option value="khulna_distric">Khulna</option>
+              <option value="jhenaidah_distric">Jhenaidah</option>
+              <option value="magura_distric">Magura</option>
+              <option value="kushtia_distric">Kushtia</option>
+              <option value="jessore_distric">Jessore</option>
+              <option value="bagerhat_distric">Bagerhat</option>
+              <option value="chuadanga_distric">Chuadanga</option>
+              <option value="meherpur_distric">Meherpur</option>
+              <option value="narial_distric">Narial</option>
+              <option value="satkhira_distric">Satkhira</option>
+            </optgroup>
+            <optgroup label="Barisal Divison ">
+              <option value="barisal_distric">Barisal</option>
+              <option value="patuakhali_distric">Patuakhali</option>
+              <option value="pirojpur_distric">Pirojpur</option>
+              <option value="jhalokati_distric">Jhalokati</option>
+              <option value="barguna_distric">Barguna</option>
+              <option value="bhola_distric">Bhola</option>
+            </optgroup>
+            <optgroup label="Sylhet Divison ">
+              <option value="sylhet_distric">Sylhet</option>
+              <option value="habiganj_distric">Habiganj</option>
+              <option value="maulvibazar_distric">Maulvibazar</option>
+              <option value="sunamganj_distric">Sunamganj</option>
+            </optgroup>
+            <optgroup label="Mymensingh Divison ">
+              <option value="mymensingh_distric">Mymensingh</option>
+              <option value="jamalpur_distric">Jamalpur</option>
+              <option value="netrokona_distric">Netrokona</option>
+              <option value="sherpur_distric">Sherpur</option>
+            </optgroup>
+            <optgroup label="Chittagong Divison ">
+              <option value="chittagong_distric">Chittagong</option>
+              <option value="coxsbazar_distric">Cox's Bazar</option>
+              <option value="comilla_distric">Comilla</option>
+              <option value="khagrachhari_distric">Khagrachhari</option>
+              <option value="chandpur_distric">Chandpur</option>
+              <option value="noakhali_distric">Noakhali</option>
+              <option value="feni_distric">Feni</option>
+              <option value="bandarban_distric">Bandarban</option>
+              <option value="brahmanbaria_distric">Brahmanbaria</option>
+              <option value="rangamati_distric">Rangamati</option>
+              <option value="lakshmipur_distric">Lakshmipur</option>
+            </optgroup></select
+          ><br /><br />
+          <textarea
+            name="feedback"
+            id="feedbackArea"
+            cols="25"
+            rows="5"
+            placeholder="Feedback"
+          ></textarea
+          ><br /><br />
+          <input type="submit" id="submitButton" class="style_submit_button" value="submit">
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
